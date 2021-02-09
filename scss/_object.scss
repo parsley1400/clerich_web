@@ -1,3 +1,31 @@
+//loading
+.o-loading{
+    background:$white;
+    position:fixed;
+    left:0;
+    top:0;
+    z-index:4;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.l-loading_logo{
+    width:100px;
+    height:auto;
+    animation:3s linear infinite rotation;
+}
+
+@keyframes rotation{
+  0%{ 
+      transform:rotate(0);
+    }
+  100%{ 
+      transform:rotate(360deg); 
+    }
+}
+
+
 //nav
 .o-nav{
     position:fixed;
@@ -306,7 +334,7 @@
 
 //footer
 .o-footer_contents{
-    width:1160px;
+    width:calc(100vw - 120px);
     height:100%;
     margin:0 auto;
     overflow:hidden;

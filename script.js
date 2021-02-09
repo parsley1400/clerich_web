@@ -1,3 +1,11 @@
+window.onload = function() {
+　setTimeout('endLoading()', 2500);
+}
+
+function endLoading(){
+  $('.js-loading').fadeOut(250);
+} 
+
 $(function(){
   $(".js-inview").on("inview", function (event, isInView) {
     if (isInView) {
