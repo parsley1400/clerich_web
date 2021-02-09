@@ -1,0 +1,268 @@
+/* line 1, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_foundation.scss */
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+  font-family: 'Noto Sans JP', sans-serif; }
+
+/* line 1, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_layout.scss */
+.l-nav {
+  width: 100vw;
+  height: 100px; }
+
+/* line 6, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_layout.scss */
+.l-header {
+  width: 100vw;
+  height: 720px; }
+
+/* line 11, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_layout.scss */
+.l-wrapper {
+  width: 100vw;
+  overflow: hidden; }
+
+/* line 16, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_layout.scss */
+.l-content {
+  width: 100vw;
+  height: calc(420/1280*100vw);
+  min-height: 420px; }
+
+/* line 22, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_layout.scss */
+.l-contact {
+  width: 100vw;
+  height: 390px; }
+
+/* line 2, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+.o-nav {
+  position: fixed;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+/* line 10, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+.o-nav_contents {
+  width: calc(100vw - 120px);
+  height: 40px;
+  position: relative;
+  z-index: 3; }
+
+/* line 17, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+.o-nav_logo {
+  height: 60px;
+  position: absolute;
+  top: -9px;
+  left: -8px; }
+
+/* line 24, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+.o-nav_twitter {
+  font-size: 45px;
+  color: #fff;
+  position: absolute;
+  top: -2px;
+  right: 0px; }
+
+/* line 32, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+.o-nav_instagram {
+  font-size: 45px;
+  color: #fff;
+  position: absolute;
+  top: -2px;
+  right: 90px; }
+
+/* line 40, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+.o-nav_back {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom right, #edbe6b, #f7ab00);
+  position: absolute;
+  z-index: 2;
+  display: none; }
+
+/* line 50, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+.o-header {
+  background: linear-gradient(to bottom right, #edbe6b, #f7ab00);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end; }
+
+/* line 57, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+.o-header_contents {
+  width: 962px;
+  height: 545px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  overflow: hidden; }
+
+/* line 66, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+.o-hero_img {
+  width: 446px;
+  height: 783px;
+  margin-top: -20px;
+  margin-left: -40px; }
+
+/* line 73, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+.o-header_right {
+  width: 485px;
+  height: 265px;
+  margin-top: 140px;
+  position: relative; }
+
+/* line 80, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+.o-header_text {
+  color: #fff;
+  font-size: 4.8rem;
+  width: 485px;
+  overflow: hidden;
+  line-height: 1.65;
+  margin-top: -15px; }
+
+/* line 89, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+.o-app-btn {
+  position: absolute;
+  left: 0;
+  bottom: 0; }
+
+/* line 95, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+.o-google-btn {
+  display: inline-block;
+  position: absolute;
+  right: -18px;
+  bottom: -18px; }
+
+/* line 105, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+.o-wrapper {
+  background-color: #fff; }
+
+/* line 109, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+.o-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative; }
+
+/* line 116, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+.o-number {
+  font-size: 40rem;
+  font-family: 'Noto Sans', sans-serif;
+  line-height: 272px;
+  position: absolute;
+  top: 0; }
+
+/* line 124, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+.o-number_1 {
+  color: #E5E5E5;
+  left: calc(50vw - (382px + 122px)); }
+
+/* line 129, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+.o-number_2 {
+  color: #FFCE78;
+  right: calc(50vw - (382px + 113px)); }
+
+/* line 134, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+.o-number_3 {
+  color: #E5E5E5;
+  left: calc(50vw - (382px + 113px)); }
+
+/* line 139, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+.o-number_4 {
+  color: #FFCE78;
+  right: calc(50vw - (382px + 104px)); }
+
+/* line 144, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+.o-content_gray {
+  background-color: #fff; }
+
+/* line 148, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+.o-content_yellow {
+  background: linear-gradient(to bottom right, #edbe6b, #f7ab00); }
+
+/* line 152, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+.o-member {
+  margin-top: 160px; }
+
+/* line 156, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+.o-content_contents {
+  width: 764px;
+  height: calc(100% - 80px);
+  overflow: hidden;
+  position: relative; }
+
+/* line 163, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+.o-content_title {
+  font-size: 3.2rem;
+  height: 35px;
+  line-height: 35px;
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+/* line 172, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+.o-content_text {
+  font-size: 1.8rem;
+  width: 365px;
+  line-height: 1.65;
+  overflow: hidden;
+  position: absolute;
+  top: 140px; }
+
+/* line 181, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+.o-l-content_text {
+  left: 0; }
+
+/* line 185, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+.o-r-content_text {
+  right: 0; }
+
+/* line 189, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+.o-content-white {
+  color: #fff; }
+
+/* line 193, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+.o-content_img {
+  height: 565px;
+  width: 309px;
+  position: absolute;
+  top: 75px;
+  right: -25px; }
+
+/* line 201, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+.o-l-content_img {
+  left: -25px; }
+
+/* line 205, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+.o-r-content_img {
+  right: -25px; }
+
+/* line 209, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+.o-fade-in {
+  opacity: 0;
+  transform: translate(0, 50%);
+  transition: 1.5s; }
+
+/* line 215, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+.o-fade-in.is-show {
+  transform: translate(0, 0);
+  opacity: 1; }
+
+/* line 223, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+.o-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+/* line 229, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+.o-contact_button {
+  background: linear-gradient(to bottom right, #edbe6b, #f7ab00);
+  width: 300px;
+  height: 70px;
+  border-radius: 35px;
+  font-size: 2.4rem;
+  line-height: 25px;
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+/*# sourceMappingURL=style.css.map */

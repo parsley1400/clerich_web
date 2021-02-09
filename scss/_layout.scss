@@ -1,0 +1,25 @@
+.l-nav{
+    width:100vw;
+    height:100px;
+}
+
+.l-header{
+    width:100vw;
+    height:720px;
+}
+
+.l-wrapper{
+    width:100vw;
+    overflow:hidden;
+}
+
+.l-content{
+    width:100vw;
+    height:calc(420/1280*100vw);
+    min-height: 420px;
+}
+
+.l-contact{
+    width:100vw;
+    height:390px;
+}
