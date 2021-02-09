@@ -291,11 +291,11 @@
   color: #fff; }
 
 /* line 258, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
-.o-contact_arrow {
+.o-contact_icon {
   font-size: 1.8rem;
   line-height: 20px;
   color: #fff;
-  margin-left: 5px; }
+  margin-right: 7px; }
 
 /* line 268, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
 .o-pr {
