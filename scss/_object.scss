@@ -8,6 +8,9 @@
     display:flex;
     justify-content: center;
     align-items: center;
+    
+    //loading消す
+    display:none;
 }
 
 .l-loading_logo{
@@ -356,12 +359,12 @@
 
 .o-footer_text_1{
     bottom:100px;
-    left:0;
+    left:5px;
 }
 
 .o-footer_text_2{
     bottom:60px;
-    left:0;
+    left:5px;
 }
 
 .o-footer_icon{
