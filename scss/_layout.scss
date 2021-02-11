@@ -6,11 +6,17 @@
 .l-nav{
     width:100vw;
     height:60px;
+    @include sp{
+        height: 80px;
+    }
 }
 
 .l-header{
     width:100vw;
     height:720px;
+    @include sp{
+        height: 740px;
+    }
 }
 
 .l-wrapper{
@@ -22,19 +28,32 @@
     width:100vw;
     height:calc(420/1280*100vw);
     min-height: 420px;
+    @include sp{
+        height:calc(690/375*100vw);
+        min-height: 690px;
+    }
 }
 
 .l-contact{
     width:100vw;
     height:390px;
+    @include sp{
+        height:370px;
+    }
 }
 
 .l-pr{
     width:100vw;
     height:400px;
+    @include sp{
+        height:500px;
+    }
 }
 
 .l-footer{
     width:100%;
     height:300px;
+    @include sp{
+        height:340px;
+    }
 }

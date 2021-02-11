@@ -5,7 +5,7 @@
   font-size: 62.5%;
   font-family: 'Noto Sans JP', sans-serif; }
 
-/* line 9, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_foundation.scss */
+/* line 8, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_foundation.scss */
 a {
   text-decoration: none; }
 
@@ -18,37 +18,62 @@ a {
 .l-nav {
   width: 100vw;
   height: 60px; }
+  @media screen and (max-width: 480px) {
+    /* line 6, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_layout.scss */
+    .l-nav {
+      height: 80px; } }
 
-/* line 11, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_layout.scss */
+/* line 14, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_layout.scss */
 .l-header {
   width: 100vw;
   height: 720px; }
+  @media screen and (max-width: 480px) {
+    /* line 14, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_layout.scss */
+    .l-header {
+      height: 740px; } }
 
-/* line 16, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_layout.scss */
+/* line 22, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_layout.scss */
 .l-wrapper {
   width: 100vw;
   overflow: hidden; }
 
-/* line 21, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_layout.scss */
+/* line 27, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_layout.scss */
 .l-content {
   width: 100vw;
   height: calc(420/1280*100vw);
   min-height: 420px; }
+  @media screen and (max-width: 480px) {
+    /* line 27, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_layout.scss */
+    .l-content {
+      height: calc(690/375*100vw);
+      min-height: 690px; } }
 
-/* line 27, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_layout.scss */
+/* line 37, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_layout.scss */
 .l-contact {
   width: 100vw;
   height: 390px; }
+  @media screen and (max-width: 480px) {
+    /* line 37, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_layout.scss */
+    .l-contact {
+      height: 370px; } }
 
-/* line 32, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_layout.scss */
+/* line 45, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_layout.scss */
 .l-pr {
   width: 100vw;
   height: 400px; }
+  @media screen and (max-width: 480px) {
+    /* line 45, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_layout.scss */
+    .l-pr {
+      height: 500px; } }
 
-/* line 37, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_layout.scss */
+/* line 53, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_layout.scss */
 .l-footer {
   width: 100%;
   height: 300px; }
+  @media screen and (max-width: 480px) {
+    /* line 53, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_layout.scss */
+    .l-footer {
+      height: 340px; } }
 
 /* line 2, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
 .o-loading {
@@ -88,25 +113,42 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center; }
+  @media screen and (max-width: 480px) {
+    /* line 38, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+    .o-nav_contents {
+      width: calc(100vw - 40px);
+      height: 80px; } }
 
-/* line 48, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+/* line 52, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
 .o-nav_logo {
   height: 40px;
   margin-top: -5px;
   margin-left: -5px; }
+  @media screen and (max-width: 480px) {
+    /* line 52, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+    .o-nav_logo {
+      height: 30px; } }
 
-/* line 54, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+/* line 61, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
 .o-nav_icon {
   font-size: 3rem;
   color: #fff;
   top: -2px;
   right: 0px; }
+  @media screen and (max-width: 480px) {
+    /* line 61, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+    .o-nav_icon {
+      font-size: 2.5rem; } }
 
-/* line 61, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+/* line 71, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
 .o-nav_twitter {
   margin-right: 30px; }
+  @media screen and (max-width: 480px) {
+    /* line 71, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+    .o-nav_twitter {
+      margin-right: 15px; } }
 
-/* line 65, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+/* line 78, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
 .o-nav_back {
   width: 100%;
   height: 100%;
@@ -117,117 +159,226 @@ a {
   z-index: -1;
   display: none; }
 
-/* line 77, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+/* line 90, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
 .o-header {
   background: linear-gradient(to bottom right, #edbe6b, #f7ab00);
   display: flex;
   justify-content: center;
-  align-items: flex-end;
   overflow: hidden; }
+  @media screen and (min-width: 480px) {
+    /* line 90, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+    .o-header {
+      align-items: flex-end; } }
 
-/* line 85, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
-.o-header_contents {
-  width: 962px;
-  height: 545px;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap; }
+@media screen and (min-width: 480px) {
+  /* line 100, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+  .o-header_contents {
+    width: 962px;
+    height: 545px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; } }
 
-/* line 93, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
-.o-hero_img {
-  width: 370px;
-  height: auto;
-  margin-top: 0px;
-  margin-left: 0px; }
+@media screen and (max-width: 480px) {
+  /* line 100, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+  .o-header_contents {
+    width: calc(100vw - 90px);
+    height: 550px;
+    margin-top: 130px;
+    position: relative; } }
 
-/* line 100, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
-.o-header_right {
-  width: 485px;
-  height: 265px;
-  margin-top: 140px;
-  position: relative; }
+@media screen and (min-width: 480px) {
+  /* line 116, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+  .o-header_right {
+    width: 485px;
+    height: 265px;
+    margin-top: 140px;
+    position: relative; } }
 
-/* line 107, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+@media screen and (min-width: 480px) {
+  /* line 125, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+  .o-hero_img {
+    width: 370px;
+    height: auto;
+    margin-top: 0px;
+    margin-left: 0px; } }
+
+@media screen and (max-width: 480px) {
+  /* line 125, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+  .o-hero_img {
+    height: 350px;
+    width: auto;
+    position: absolute;
+    top: 116px;
+    left: 0;
+    right: 0;
+    margin: auto; } }
+
+/* line 143, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
 .o-header_text {
   color: #fff;
   font-size: 4.8rem;
-  width: 485px;
-  overflow: hidden;
   line-height: 1.65;
-  margin-top: -15px; }
+  overflow: hidden; }
+  @media screen and (min-width: 480px) {
+    /* line 143, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+    .o-header_text {
+      width: 485px;
+      margin-top: -15px; } }
+  @media screen and (max-width: 480px) {
+    /* line 143, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+    .o-header_text {
+      font-size: 2.8rem;
+      position: absolute;
+      top: 0px;
+      left: 0;
+      right: 0;
+      margin: auto; } }
 
-/* line 116, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+/* line 162, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
 .o-app-btn {
-  position: absolute;
-  left: 0;
-  bottom: 0; }
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 13px;
+  width: 200px;
+  height: 75px;
+  position: absolute; }
+  @media screen and (min-width: 480px) {
+    /* line 162, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+    .o-app-btn {
+      left: 0;
+      bottom: 0; } }
+  @media screen and (max-width: 480px) {
+    /* line 162, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+    .o-app-btn {
+      width: 120px;
+      height: 45px;
+      bottom: -2px;
+      left: 0; } }
 
-/* line 122, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+/* line 181, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+.o-app-btn img {
+  border-radius: 13px;
+  width: 200px;
+  height: 83px; }
+  @media screen and (max-width: 480px) {
+    /* line 181, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+    .o-app-btn img {
+      width: 120px;
+      height: 45px; } }
+
+/* line 191, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
 .o-google-btn {
   display: inline-block;
-  position: absolute;
-  right: -18px;
-  bottom: -18px; }
+  width: 255px;
+  position: absolute; }
+  @media screen and (min-width: 480px) {
+    /* line 191, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+    .o-google-btn {
+      right: -18px;
+      bottom: -18px; } }
+  @media screen and (max-width: 480px) {
+    /* line 191, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+    .o-google-btn {
+      width: calc(120px * (255 / 200));
+      right: -10px;
+      bottom: -12px; } }
 
-/* line 132, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+/* line 206, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+.o-google-btn img {
+  width: 255px; }
+  @media screen and (max-width: 480px) {
+    /* line 206, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+    .o-google-btn img {
+      width: calc(120px * (255 / 200)); } }
+
+/* line 216, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
 .o-wrapper {
   background-color: #fff; }
 
-/* line 136, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+/* line 220, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
 .o-content {
   display: flex;
   justify-content: center;
   align-items: flex-end;
   position: relative; }
 
-/* line 143, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+/* line 227, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
 .o-number {
   font-size: 40rem;
   font-family: 'Noto Sans', sans-serif;
   line-height: 272px;
   position: absolute;
   top: 0px; }
+  @media screen and (max-width: 480px) {
+    /* line 227, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+    .o-number {
+      font-size: 20rem;
+      line-height: 140px;
+      left: 20px; } }
 
-/* line 151, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+/* line 240, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
 .o-number_1 {
-  color: #E5E5E5;
-  left: calc(50vw - (382px + 130px)); }
+  color: #E5E5E5; }
+  @media screen and (min-width: 480px) {
+    /* line 240, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+    .o-number_1 {
+      left: calc(50vw - (382px + 130px)); } }
 
-/* line 156, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+/* line 247, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
 .o-number_2 {
-  color: #FFCE78;
-  right: calc(50vw - (382px + 130px)); }
+  color: #FFCE78; }
+  @media screen and (min-width: 480px) {
+    /* line 247, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+    .o-number_2 {
+      right: calc(50vw - (382px + 130px)); } }
 
-/* line 161, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+/* line 254, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
 .o-number_3 {
-  color: #E5E5E5;
-  left: calc(50vw - (382px + 130px)); }
+  color: #E5E5E5; }
+  @media screen and (min-width: 480px) {
+    /* line 254, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+    .o-number_3 {
+      left: calc(50vw - (382px + 130px)); } }
 
-/* line 166, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+/* line 261, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
 .o-number_4 {
-  color: #FFCE78;
-  right: calc(50vw - (382px + 130px)); }
+  color: #FFCE78; }
+  @media screen and (min-width: 480px) {
+    /* line 261, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+    .o-number_4 {
+      right: calc(50vw - (382px + 130px)); } }
 
-/* line 171, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+/* line 268, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
 .o-content_gray {
   background-color: #fff; }
 
-/* line 175, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+/* line 272, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
 .o-content_yellow {
   background: linear-gradient(to bottom right, #edbe6b, #f7ab00); }
 
-/* line 179, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+/* line 276, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
 .o-member {
   margin-top: 160px; }
+  @media screen and (max-width: 480px) {
+    /* line 276, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+    .o-member {
+      margin-top: 60px; } }
 
-/* line 183, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+/* line 283, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
 .o-content_contents {
   width: 764px;
   height: calc(100% - 80px);
   overflow: hidden;
   position: relative; }
+  @media screen and (max-width: 480px) {
+    /* line 283, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+    .o-content_contents {
+      width: calc(100vw - 40px);
+      height: calc(100% - 55px);
+      margin-top: 55px; } }
 
-/* line 190, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+/* line 295, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
 .o-content_title {
   font-size: 3.2rem;
   height: 35px;
@@ -235,52 +386,77 @@ a {
   position: absolute;
   top: 0;
   left: 0; }
+  @media screen and (max-width: 480px) {
+    /* line 295, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+    .o-content_title {
+      font-size: 2.8rem;
+      height: 40px;
+      line-height: 40px; } }
 
-/* line 199, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+/* line 309, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
 .o-content_text {
   font-size: 1.8rem;
   width: 365px;
   line-height: 1.65;
   overflow: hidden;
-  position: absolute;
-  top: 140px; }
+  position: absolute; }
+  @media screen and (min-width: 480px) {
+    /* line 309, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+    .o-content_text {
+      top: 140px;
+      left: 0; } }
+  @media screen and (max-width: 480px) {
+    /* line 309, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+    .o-content_text {
+      font-size: 1.5rem;
+      width: calc(100% - 90px);
+      bottom: 60px;
+      left: 0;
+      right: 0;
+      margin: auto; } }
 
-/* line 208, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
-.o-l-content_text {
-  left: 0; }
-
-/* line 212, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+/* line 329, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
 .o-content-white {
   color: #fff; }
 
-/* line 216, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+/* line 333, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
 .o-content_img {
   height: 300px;
   width: auto;
-  position: absolute;
-  top: 0px;
-  right: 0px; }
+  position: absolute; }
+  @media screen and (min-width: 480px) {
+    /* line 333, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+    .o-content_img {
+      top: 0px;
+      right: 0px; } }
+  @media screen and (max-width: 480px) {
+    /* line 333, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+    .o-content_img {
+      top: 100px;
+      left: 0;
+      right: 0;
+      margin: auto; } }
 
-/* line 224, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+/* line 349, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
 .o-fade-in {
   opacity: 0;
   transform: translate(0, 50%);
   transition: 1.5s; }
 
-/* line 230, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+/* line 355, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
 .o-fade-in.is-show {
   transform: translate(0, 0);
   opacity: 1; }
 
-/* line 238, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+/* line 363, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
 .o-contact {
   display: flex;
   justify-content: center;
   align-items: center; }
 
-/* line 244, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+/* line 369, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
 .o-contact_button {
-  background: linear-gradient(to bottom right, #edbe6b, #f7ab00);
+  background: linear-gradient(to bottom right, #9361fc, #813ffa);
   width: 300px;
   height: 70px;
   border-radius: 35px;
@@ -288,41 +464,60 @@ a {
   display: flex;
   justify-content: center;
   align-items: center; }
+  @media screen and (max-width: 480px) {
+    /* line 369, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+    .o-contact_button {
+      width: 220px;
+      height: 50px;
+      border-radius: 25px; } }
 
-/* line 255, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+/* line 385, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
 .o-contact_text {
   font-size: 1.8rem;
   line-height: 20px;
   color: #fff; }
+  @media screen and (max-width: 480px) {
+    /* line 385, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+    .o-contact_text {
+      font-size: 1.5rem; } }
 
-/* line 261, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+/* line 394, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
 .o-contact_icon {
   font-size: 1.8rem;
   line-height: 20px;
   color: #fff;
   margin-right: 7px; }
 
-/* line 271, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+/* line 404, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
 .o-pr {
   background: linear-gradient(to bottom right, #edbe6b, #f7ab00); }
 
-/* line 275, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+/* line 408, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
 .o-pr_contents {
   width: 500px;
   height: 100%;
   margin: 0 auto;
   position: relative; }
+  @media screen and (max-width: 480px) {
+    /* line 408, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+    .o-pr_contents {
+      width: calc(100% - 60px);
+      height: 100%; } }
 
-/* line 282, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+/* line 419, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
 .o-pr_img {
   width: 230px;
   height: auto;
   display: block;
   margin: 0 auto;
-  padding-top: 65px;
-  z-index: 1; }
+  z-index: 1;
+  padding-top: 65px; }
+  @media screen and (max-width: 480px) {
+    /* line 419, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+    .o-pr_img {
+      padding-top: 170px; } }
 
-/* line 291, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+/* line 431, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
 .o-pr_string {
   width: 100%;
   height: 50px;
@@ -332,110 +527,209 @@ a {
   display: flex;
   justify-content: space-between;
   z-index: 2; }
+  @media screen and (max-width: 480px) {
+    /* line 431, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+    .o-pr_string {
+      width: 220px;
+      height: 50px;
+      top: 60px;
+      right: 0;
+      margin: auto; } }
 
-/* line 302, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+/* line 449, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
 .o-pr_logo {
   width: 50px;
   height: auto; }
 
-/* line 307, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+/* line 454, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
 .o-logo_text {
-  font-size: 32px;
+  font-size: 3.2rem;
   line-height: 45px;
   font-weight: bold;
   color: #fff;
   width: 384px;
   margin-right: -3px; }
+  @media screen and (max-width: 480px) {
+    /* line 454, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+    .o-logo_text {
+      font-size: 1.8rem;
+      line-height: 1.65;
+      height: 50px;
+      margin-top: -4px;
+      width: 130px; } }
 
-/* line 316, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+/* line 470, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
 .o-pr_buttons {
   width: 100%;
   height: 65px;
   position: absolute;
-  top: 260px;
   left: 0px;
   display: flex;
   justify-content: space-between;
   z-index: 2; }
+  @media screen and (min-width: 480px) {
+    /* line 470, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+    .o-pr_buttons {
+      top: 260px; } }
+  @media screen and (max-width: 480px) {
+    /* line 470, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+    .o-pr_buttons {
+      bottom: 60px;
+      height: 45px; } }
 
-/* line 327, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+/* line 487, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
 .o-pr_app-btn {
-  margin-top: -10px; }
+  margin-top: -10px;
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 13px;
+  width: 200px;
+  height: 75px; }
+  @media screen and (max-width: 480px) {
+    /* line 487, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+    .o-pr_app-btn {
+      width: 120px;
+      height: 45px;
+      margin-top: 0px; } }
 
-/* line 331, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+/* line 501, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+.o-pr_app-btn img {
+  border-radius: 13px;
+  width: 200px;
+  height: 83px; }
+  @media screen and (max-width: 480px) {
+    /* line 501, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+    .o-pr_app-btn img {
+      width: 120px;
+      height: 45px; } }
+
+/* line 511, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
 .o-pr_google-btn {
   display: inline-block;
   margin-right: -18px;
-  margin-top: -18px; }
+  margin-top: -18px;
+  width: 255px; }
+  @media screen and (max-width: 480px) {
+    /* line 511, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+    .o-pr_google-btn {
+      width: calc(120px * (255 / 200));
+      margin-right: -8px;
+      margin-top: -8px; } }
 
-/* line 339, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+/* line 523, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+.o-pr_google-btn img {
+  width: 255px; }
+  @media screen and (max-width: 480px) {
+    /* line 523, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+    .o-pr_google-btn img {
+      width: calc(120px * (255 / 200)); } }
+
+/* line 532, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
 .o-footer_contents {
   width: calc(100vw - 120px);
   height: 100%;
   margin: 0 auto;
   overflow: hidden;
   position: relative; }
+  @media screen and (max-width: 480px) {
+    /* line 532, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+    .o-footer_contents {
+      width: calc(100vw - 40px); } }
 
-/* line 347, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+/* line 543, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
 .o-footer_logo {
   width: 73px;
   display: block;
   margin: 90px auto 0; }
+  @media screen and (max-width: 480px) {
+    /* line 543, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+    .o-footer_logo {
+      width: 50px;
+      margin-top: 100px; } }
 
-/* line 353, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+/* line 553, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
 .o-footer_text {
   font-size: 1.5rem;
   color: #A6A6A6;
   line-height: 20px;
   position: absolute; }
+  @media screen and (max-width: 480px) {
+    /* line 553, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+    .o-footer_text {
+      font-size: 1.2rem; } }
 
-/* line 360, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+/* line 563, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
 .o-footer_text_1 {
   bottom: 100px;
   left: 5px; }
+  @media screen and (max-width: 480px) {
+    /* line 563, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+    .o-footer_text_1 {
+      bottom: 85px; } }
 
-/* line 365, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+/* line 571, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
 .o-footer_text_2 {
   bottom: 60px;
   left: 5px; }
+  @media screen and (max-width: 480px) {
+    /* line 571, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+    .o-footer_text_2 {
+      bottom: 50px; } }
 
-/* line 370, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+/* line 579, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
 .o-footer_icon {
-  font-size: 30px;
+  font-size: 3rem;
   position: absolute;
   bottom: 60px;
-  color: #f7ab00; }
+  color: #9361fc; }
+  @media screen and (max-width: 480px) {
+    /* line 579, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+    .o-footer_icon {
+      font-size: 2rem;
+      bottom: 50px; } }
 
-/* line 377, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+/* line 590, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
 .o-footer_twitter {
   right: 65px; }
+  @media screen and (max-width: 480px) {
+    /* line 590, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+    .o-footer_twitter {
+      right: 40px; } }
 
-/* line 381, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+/* line 597, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
 .o-footer_instagram {
   right: 5px; }
 
-/* line 385, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+/* line 601, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
 .o-footer_footer {
   bottom: 20px;
   width: 100%;
   text-align: center; }
+  @media screen and (max-width: 480px) {
+    /* line 601, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+    .o-footer_footer {
+      bottom: 15px; } }
 
-/* line 393, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
-.o-animation {
-  transition: 1s all; }
+@media screen and (min-width: 480px) {
+  /* line 612, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+  .o-animation {
+    transition: 1s all; } }
 
-/* line 397, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
-.o-animation:hover {
-  transform: scale(1.2, 1.2);
-  transition: 0.5s all; }
+@media screen and (min-width: 480px) {
+  /* line 618, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+  .o-animation:hover {
+    transform: scale(1.2, 1.2);
+    transition: 0.5s all; } }
 
-/* line 402, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
-.o-animation_2 {
-  transition: 1s all; }
+@media screen and (min-width: 480px) {
+  /* line 625, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+  .o-animation_2 {
+    transition: 1s all; } }
 
-/* line 406, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
-.o-animation_2:hover {
-  transform: scale(1.1, 1.1);
-  transition: 0.5s all; }
+@media screen and (min-width: 480px) {
+  /* line 631, /Users/takeyarisako/Desktop/clerich/clerich_web/scss/_object.scss */
+  .o-animation_2:hover {
+    transform: scale(1.1, 1.1);
+    transition: 0.5s all; } }
 
 /*# sourceMappingURL=style.css.map */

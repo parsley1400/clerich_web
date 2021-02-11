@@ -43,12 +43,19 @@
     display:flex;
     justify-content: space-between;
     align-items: center;
+    @include sp{
+        width:calc(100vw - 40px);
+        height: 80px;
+    }
 }
 
 .o-nav_logo{
     height:40px;
     margin-top:-5px;
     margin-left:-5px;
+    @include sp{
+        height: 30px;
+    }
 }
 
 .o-nav_icon{
@@ -56,10 +63,16 @@
     color:$white;
     top:-2px;
     right:0px;
+    @include sp{
+        font-size:2.5rem;
+    }
 }
 
 .o-nav_twitter{
     margin-right:30px;
+    @include sp{
+        margin-right:15px;
+    }
 }
 
 .o-nav_back{
@@ -78,52 +91,123 @@
     @include gradation;
     display:flex;
     justify-content: center;
-    align-items:flex-end;
     overflow:hidden;
+    @include pc{
+        align-items:flex-end;
+    }
 }
 
 .o-header_contents{
-    width:962px;
-    height:545px;
-    display:flex;
-    justify-content: space-between;
-    flex-wrap:wrap;
-}
-
-.o-hero_img{
-    width:370px;
-    height:auto;
-    margin-top:0px;
-    margin-left:0px;
+    @include pc{
+        width:962px;
+        height:545px;
+        display:flex;
+        flex-wrap:wrap;
+        justify-content: space-between;
+    }
+    @include sp{
+        width: calc(100vw - 90px);
+        height:550px;
+        margin-top:130px;
+        position:relative;
+    }
 }
 
 .o-header_right{
-    width:485px;
-    height:265px;
-    margin-top:140px;
-    position:relative;
+    @include pc{
+        width:485px;
+        height:265px;
+        margin-top:140px;
+        position:relative;
+    }
+}
+
+.o-hero_img{
+    @include pc{
+        width:370px;
+        height:auto;
+        margin-top:0px;
+        margin-left:0px;
+    }
+    @include sp{
+        height:350px;
+        width:auto;
+        position:absolute;
+        top:116px;
+        left:0;
+        right:0;
+        margin:auto;
+    }
 }
 
 .o-header_text{
     color:$white;
     font-size:4.8rem;
-    width:485px;
-    overflow:hidden;
     line-height:1.65;
-    margin-top:-15px;
+    overflow:hidden;
+    @include pc{
+        width:485px;
+        margin-top:-15px;
+    }
+    @include sp{
+        font-size:2.8rem;
+        position:absolute;
+        top:0px;
+        left:0;
+        right:0;
+        margin:auto;
+    }
 }
 
 .o-app-btn{
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 13px;
+    width: 200px;
+    height: 75px;
     position:absolute;
-    left:0;
-    bottom:0;
+    @include pc{
+        left:0;
+        bottom:0;
+    }
+    @include sp{
+        width:120px;
+        height:45px;
+        bottom:-2px;
+        left:0;
+    }
+}
+
+.o-app-btn img{
+    border-radius: 13px;
+    width: 200px;
+    height: 83px;
+    @include sp{
+        width:120px;
+        height:45px;
+    }
 }
 
 .o-google-btn{
     display:inline-block;
+    width:255px;
     position:absolute;
-    right:-18px;
-    bottom:-18px;
+    @include pc{
+        right:-18px;
+        bottom:-18px;
+    }
+    @include sp{
+        width:calc(120px * (255 / 200));
+        right:-10px;
+        bottom:-12px;
+    }
+}
+
+.o-google-btn img{
+    width:255px;
+    @include sp{
+        width:calc(120px * (255 / 200));
+    }
 }
 
 
@@ -146,26 +230,39 @@
     line-height:272px;
     position:absolute;
     top:0px;
+    @include sp{
+        font-size:20rem;
+        line-height:140px;
+        left:20px;
+    }
 }
 
 .o-number_1{
     color:$gray;
-    left:calc(50vw - (382px + 130px));
+    @include pc{
+        left:calc(50vw - (382px + 130px));
+    }
 }
 
 .o-number_2{
     color:$font-yellow;
-    right:calc(50vw - (382px + 130px));
+    @include pc{
+        right:calc(50vw - (382px + 130px));
+    }
 }
 
 .o-number_3{
     color:$gray;
-    left:calc(50vw - (382px + 130px));
+    @include pc{
+        left:calc(50vw - (382px + 130px));
+    }
 }
 
 .o-number_4{
     color:$font-yellow;
-    right:calc(50vw - (382px + 130px));
+    @include pc{
+        right:calc(50vw - (382px + 130px));
+    }
 }
 
 .o-content_gray{
@@ -178,6 +275,9 @@
 
 .o-member{
     margin-top:160px;
+    @include sp{
+        margin-top: 60px;
+    }
 }
 
 .o-content_contents{
@@ -185,6 +285,11 @@
     height:calc(100% - 80px);
     overflow:hidden;
     position:relative;
+    @include sp{
+        width: calc(100vw - 40px);
+        height:calc(100% - 55px);
+        margin-top:55px;
+    }
 }
 
 .o-content_title{
@@ -194,6 +299,11 @@
     position:absolute;
     top:0;
     left:0;
+    @include sp{
+        font-size:2.8rem;
+        height:40px;
+        line-height:40px;
+    }
 }
 
 .o-content_text{
@@ -202,11 +312,18 @@
     line-height:1.65;
     overflow:hidden;
     position:absolute;
-    top:140px;
-}
-
-.o-l-content_text{
-    left:0;
+    @include pc{
+        top:140px;
+        left: 0;
+    }
+    @include sp{
+        font-size:1.5rem;
+        width: calc(100% - 90px);
+        bottom: 60px;
+        left:0;
+        right:0;
+        margin:auto;
+    }
 }
 
 .o-content-white{
@@ -217,8 +334,16 @@
     height:300px;
     width:auto;
     position:absolute;
-    top:0px;
-    right:0px;
+    @include pc{
+        top:0px;
+        right:0px;
+    }
+    @include sp{
+        top: 100px;
+        left:0;
+        right:0;
+        margin:auto;
+    }
 }
 
 .o-fade-in {
@@ -242,7 +367,7 @@
 }
 
 .o-contact_button{
-    @include gradation;
+    @include gradation_p;
     width:300px;
     height:70px;
     border-radius:35px;
@@ -250,12 +375,20 @@
     display:flex;
     justify-content: center;
     align-items:center;
+    @include sp{
+        width:220px;
+        height:50px;
+        border-radius:25px;
+    }
 }
 
 .o-contact_text{
     font-size:1.8rem;
     line-height:20px;
     color:$white;
+    @include sp{
+        font-size:1.5rem;
+    }
 }
 
 .o-contact_icon{
@@ -277,6 +410,10 @@
     height:100%;
     margin: 0 auto;
     position:relative;
+    @include sp{
+        width: calc(100% - 60px);
+        height: 100%;
+    }
 }
 
 .o-pr_img{
@@ -284,8 +421,11 @@
     height:auto;
     display:block;
     margin:0 auto;
-    padding-top:65px;
     z-index:1;
+    padding-top:65px;
+    @include sp{
+        padding-top:170px;
+    }
 }
 
 .o-pr_string{
@@ -297,6 +437,13 @@
     display:flex;
     justify-content: space-between;
     z-index:2;
+    @include sp{
+        width:220px;
+        height:50px;
+        top:60px;
+        right:0;
+        margin:auto;
+    }
 }
 
 .o-pr_logo{
@@ -305,33 +452,79 @@
 }
 
 .o-logo_text{
-    font-size:32px;
+    font-size:3.2rem;
     line-height:45px;
     font-weight:bold;
     color:$white;
     width:384px;
     margin-right:-3px;
+    @include sp{
+        font-size:1.8rem;
+        line-height:1.65;
+        height:50px;
+        margin-top:-4px;
+        width:130px;
+    }
 }
 
 .o-pr_buttons{
     width:100%;
     height:65px;
     position:absolute;
-    top:260px;
     left:0px;
     display:flex;
     justify-content: space-between;
     z-index:2;
+    @include pc{
+        top:260px;
+    }
+    @include sp{
+        bottom: 60px;
+        height:45px;
+    }
 }
 
 .o-pr_app-btn{
     margin-top:-10px;
+    display: inline-block;
+    overflow: hidden; 
+    border-radius: 13px; 
+    width: 200px; 
+    height: 75px;
+    @include sp{
+        width:120px;
+        height:45px;
+        margin-top:0px;
+    }
+}
+
+.o-pr_app-btn img{
+    border-radius: 13px;
+    width: 200px;
+    height: 83px;
+    @include sp{
+        width:120px;
+        height:45px;
+    }
 }
 
 .o-pr_google-btn{
     display:inline-block;
     margin-right:-18px;
     margin-top:-18px;
+    width:255px;
+    @include sp{
+        width:calc(120px * (255 / 200));
+        margin-right:-8px;
+        margin-top:-8px;
+    }
+}
+
+.o-pr_google-btn img{
+    width:255px;
+    @include sp{
+        width:calc(120px * (255 / 200));
+    }
 }
 
 
@@ -342,12 +535,19 @@
     margin:0 auto;
     overflow:hidden;
     position:relative;
+    @include sp{
+        width:calc(100vw - 40px);
+    }
 }
 
 .o-footer_logo{
     width:73px;
     display:block;
     margin:90px auto 0;
+    @include sp{
+        width: 50px;
+        margin-top:100px;
+    }
 }
 
 .o-footer_text{
@@ -355,27 +555,43 @@
     color:$gray-deep;
     line-height:20px;
     position:absolute;
+    @include sp{
+        font-size:1.2rem;
+    }
 }
 
 .o-footer_text_1{
     bottom:100px;
     left:5px;
+    @include sp{
+        bottom: 85px;
+    }
 }
 
 .o-footer_text_2{
     bottom:60px;
     left:5px;
+    @include sp{
+        bottom: 50px;
+    }
 }
 
 .o-footer_icon{
-    font-size:30px;
+    font-size:3rem;
     position:absolute;
     bottom:60px;
-    color:$yellow_deep;
+    color:$purple_pale;
+    @include sp{
+        font-size:2rem;
+        bottom:50px;
+    }
 }
 
 .o-footer_twitter{
     right:65px;
+    @include sp{
+        right:40px;
+    }
 }
 
 .o-footer_instagram{
@@ -386,24 +602,35 @@
     bottom:20px;
     width:100%;
     text-align:center;
+    @include sp{
+        bottom: 15px;
+    }
 }
 
 
 //animation
 .o-animation{
-    transition:1s all;
+    @include pc{
+        transition:1s all;
+    }
 }
 
 .o-animation:hover{
-    transform:scale(1.2,1.2);
-    transition:0.5s all;
+    @include pc{
+        transform:scale(1.2,1.2);
+        transition:0.5s all;
+    }
 }
 
 .o-animation_2{
-    transition:1s all;
+    @include pc{
+        transition:1s all;
+    }
 }
 
 .o-animation_2:hover{
-    transform:scale(1.1,1.1);
-    transition:0.5s all;
+    @include pc{
+        transform:scale(1.1,1.1);
+        transition:0.5s all;
+    }
 }
